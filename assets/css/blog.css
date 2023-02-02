@@ -166,13 +166,13 @@ footer i {
     padding: 1.5rem;
   }
   header .site-title {
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
 }
 
 @media screen and (max-width: 550px) {
   header .site-title {
-    font-size: 3rem;
+    font-size: 2.4rem;
   }
   .articles {
     row-gap: 1.2rem;
@@ -199,7 +199,7 @@ footer i {
     row-gap: 1.2rem;
   }
   header .site-title {
-    font-size: 2.4rem;
+    font-size: 2.3rem;
   }
   .article {
     padding: 1.2rem;
