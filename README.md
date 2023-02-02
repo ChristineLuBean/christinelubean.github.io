@@ -1,2 +1,2 @@
-# christinelubean.github.io
+# SheHaxolotl's Notebook
 Blog in progress
