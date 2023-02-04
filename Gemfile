@@ -7,4 +7,5 @@ gem "jekyll"
 gem "jekyll-sitemap"
 gem "jekyll-seo-tag"
 gem "jekyll-feed"
+gem 'sass-embedded', '~> 1.58'
 gem "webrick"

@@ -1,4 +1,7 @@
-const categories = { security_tips: [{ url: `/posts/stay-safe-in-the-cyber-world/`, date: `03 Feb 2023`, title: `Safety in the Cyber World: A Guide to Basic Cybersecurity Measures`},], }
+---
+---
+
+const categories = { {% for category in site.categories %}{% capture category_name %}{{ category | first }}{% endcapture %}{{ category_name | replace: " ", "_" }}: [{% for post in site.categories[category_name] %}{ url: `{{ site.baseurl }}{{ post.url }}`, date: `{{post.date | date_to_string}}`, title: `{{post.title}}`},{% endfor %}],{% endfor %} }
 
 console.log(categories)
 
