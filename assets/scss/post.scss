@@ -30,7 +30,7 @@ body {
 
 .content a {
   color: map-get($theme-colors, "cyan-2");
-  border-bottom: 1px solid map-get($theme-colors, "cyan-");
+  border-bottom: 1px solid map-get($theme-colors, "cyan-2");
 }
 
 main {
