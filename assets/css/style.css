@@ -1,3 +1,236 @@
+@import url("https://fonts.googleapis.com/css2?family=Cousine:ital,wght@0,400;0,700;1,400;1,700&family=Press+Start+2P&family=VT323&display=swap");
+.highlight,
+.highlight .err,
+.highlight .g,
+.highlight .l,
+.highlight .n,
+.highlight .o,
+.highlight .x,
+.highlight .p,
+.highlight .gd,
+.highlight .ge,
+.highlight .gr,
+.highlight .gi,
+.highlight .gp,
+.highlight .gs,
+.highlight .gu,
+.highlight .gt,
+.highlight .ld,
+.highlight .nb,
+.highlight .nc,
+.highlight .nd,
+.highlight .ni,
+.highlight .ne,
+.highlight .nl,
+.highlight .nn,
+.highlight .nx,
+.highlight .py,
+.highlight .ow,
+.highlight .bp {
+  color: #ffffff; }
+.highlight .w {
+  color: #afb8c1; }
+.highlight .go {
+  color: #4e5150; }
+.highlight .kt {
+  color: #d1cea9; }
+.highlight .cp {
+  color: #e10005; }
+.highlight .c,
+.highlight .cm,
+.highlight .c1,
+.highlight .cs {
+  color: #158a15; }
+.highlight .k,
+.highlight .kc,
+.highlight .kd,
+.highlight .kn,
+.highlight .kp,
+.highlight .kr,
+.highlight .nt,
+.highlight .nv,
+.highlight .vc,
+.highlight .vg,
+.highlight .vi {
+  color: #fc6609; }
+.highlight .m
+.mf,
+.highlight .mh,
+.highlight .mi,
+.highlight .mo,
+.highlight .il,
+.highlight .sb,
+.highlight .sc,
+.highlight .sd,
+.highlight .s2,
+.highlight .se,
+.highlight .sh,
+.highlight .si,
+.highlight .sx,
+.highlight .sr,
+.highlight .s1,
+.highlight .ss {
+  color: #0084f3; }
+.highlight .s,
+.highlight .no {
+  color: #0086d4; }
+.highlight .na,
+.highlight .nf {
+  color: #ff1395; }
+.highlight .c,
+.highlight .cm,
+.highlight .cp,
+.highlight .c1,
+.highlight .cs {
+  font-style: italic; }
+.highlight .gh,
+.highlight .gu,
+.highlight .k,
+.highlight .cp,
+.highlight .kc,
+.highlight .kd,
+.highlight .kn,
+.highlight .kr,
+.highlight .kt,
+.highlight .m,
+.highlight .mf,
+.highlight .mh,
+.highlight .mi,
+.highlight .mo,
+.highlight .il,
+.highlight .na,
+.highlight .nf,
+.highlight .nt {
+  font-weight: bold; }
+.highlight .c,
+.highlight .cm,
+.highlight .cp,
+.highlight .c1,
+.highlight .cs {
+  background-color: none; }
+.highlight .go {
+  background-color: #2c2c2b; }
+.highlight .hll {
+  background-color: #363735; }
 
+@media screen and (max-width: 750px) {
+  body {
+    padding: 1.5rem; } }
+header {
+  padding: 2rem 0 4rem 0; }
+  @media screen and (max-width: 550px) {
+    header {
+      text-align: center;
+      padding-bottom: 1.5rem; } }
+  header .site-title {
+    font-size: 2.6rem;
+    font-family: "Press Start 2P", cursive;
+    font-weight: bolder;
+    line-height: 110%;
+    color: #a9ace4; }
+    @media (min-width: 551px) and (max-width: 750px) {
+      header .site-title {
+        font-size: 2rem; } }
+    @media screen and (max-width: 350px) {
+      header .site-title {
+        font-size: 1rem; } }
+    @media (min-width: 351px) and (max-width: 550px) {
+      header .site-title {
+        font-size: 1.25rem; } }
+
+#category-modal-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 10;
+  display: none;
+  visibility: hidden; }
+
+#category-modal {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 1.5rem;
+  right: 1.5rem;
+  z-index: 100;
+  max-width: 850px;
+  max-height: 60vh;
+  border-radius: 1rem;
+  padding: 1rem;
+  margin: auto;
+  background: #363735;
+  display: none;
+  visibility: hidden;
+  line-height: 140%; }
+
+#category-modal-content {
+  display: relative;
+  max-height: calc(100% - 5rem);
+  overflow: auto; }
+
+#category-modal-title {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  padding: 1rem;
+  color: #ff1395;
+  max-width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; }
+
+#category-modal-bg.open,
+#category-modal.open {
+  display: block;
+  visibility: visible; }
+
+.modal-article,
+.modal-article-date {
+  display: block;
+  color: #c8ced2; }
+
+.modal-article {
+  margin-bottom: 0.5rem;
+  padding: 0.5rem 1rem;
+  transition: all 0.2s ease-in-out; }
+  .modal-article:hover {
+    background: #5156c7; }
+
+.modal-article-date {
+  font-size: 0.8rem; }
+
+hr {
+  border-top: 2px dashed #c8ced2;
+  border-bottom: none;
+  border-left: none;
+  border-right: none;
+  margin-bottom: 1.75rem; }
+
+/**
+# TODO: fix footer copyright for mobile viewport
+**/
+/* footer */
+footer {
+  font-size: 0.9rem; }
+  footer p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.25em; }
+  footer i {
+    font-size: 1em;
+    font-style: normal; }
+  @media screen and (max-width: 550px) {
+    footer {
+      text-align: center;
+      gap: 0.25em; }
+      footer p {
+        display: inline-block;
+        font-size: .8em; }
+      footer i {
+        display: inline-block;
+        font-size: .9em; } }
 
 /*# sourceMappingURL=style.css.map */

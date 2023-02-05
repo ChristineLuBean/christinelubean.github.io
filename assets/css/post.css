@@ -24,17 +24,8 @@ body {
   background-color: #162c36; }
 
 .content a {
-  color: cyan;
-  border-bottom: 1px solid cyan; }
-
-header {
-  padding: 2rem 0 4rem 0; }
-
-.site-title {
-  font-size: 6rem;
-  line-height: 110%;
-  color: #8c91db;
-  font-family: "VT323", monospace; }
+  color: #00fcfc;
+  border-bottom: 1px solid; }
 
 main {
   margin: 0 auto;
@@ -55,7 +46,7 @@ main {
   margin-bottom: 0.6rem;
   line-height: 140%;
   color: #ff1395;
-  font-family: "Press Start 2P", cursive; }
+  font-family: "Cousine", monospace; }
 
 .categories {
   display: flex;
@@ -66,7 +57,7 @@ main {
     margin: 0 0.5rem 0.3rem 0;
     display: block;
     color: #000000;
-    background: #39c8b9;
+    background: #39d9c0;
     border-radius: 15px;
     font-size: 0.8rem;
     font-weight: 800;
@@ -77,7 +68,7 @@ main {
     .categories .category:hover {
       transform: scale(1.1);
       color: #ffffff;
-      background: #39c8b9; }
+      background: #39d9c0; }
 
 /* markdown content */
 .content {
@@ -108,7 +99,7 @@ main {
   .content h6 {
     margin: 1.75rem 0;
     color: #ff1395;
-    font-family: "Press Start 2P", cursive; }
+    font-family: "Cousine", monospace; }
   .content blockquote {
     padding-left: 1.42188rem;
     margin-bottom: 1.75rem;
@@ -182,21 +173,5 @@ main {
     padding: 4px;
     background-color: black;
     border: 2px solid white; }
-
-/* footer */
-footer {
-  font-size: 0.9rem; }
-  footer p {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 0.25em; }
-  footer i {
-    font-size: 1.4em;
-    font-style: normal; }
-
-@media screen and (max-width: 750px) {
-  body {
-    padding: 1.5rem; } }
 
 /*# sourceMappingURL=post.css.map */
